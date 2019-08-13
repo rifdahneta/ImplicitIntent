@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsActivity"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <EditText
+        android:editable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Tujuan"
+        android:id="@+id/edt_nomor_tujuan"/>
+
+    <EditText
+        android:id="@+id/edt_body_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Body SMS"
+        android:lines="5"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/btn_sms_langsung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim sms langsung"/>
+
+    <Button
+        android:id="@+id/btn_sms_aplikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim sms dengan aplikasi"/>
+
+
+</LinearLayout>
